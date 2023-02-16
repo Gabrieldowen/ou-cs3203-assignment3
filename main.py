@@ -1,3 +1,4 @@
+# this is a comment i am adding to explore checkout
 
 # finds and returns the sum of the array
 def summation(numList):
