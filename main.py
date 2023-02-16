@@ -15,6 +15,16 @@ def product(numList):
 
     return total
 
+# reverses order of array items
+
+def reverse(numList):
+    reverseList = []
+
+    for num in numList:
+        reverseList.insert(0, num)
+
+    return reverseList
+
 # main
 numList = []
 
@@ -27,7 +37,12 @@ for i in range(sizeList):
 # function calls
 finalSum = summation(numList)
 finalProduct = product(numList)
+reversedList = reverse(numList)
 
 # final output
 print("\nthe sum is " + str(finalSum))
 print("\nthe product is " + str(finalProduct))
+
+print("here is the reversed list")
+for num in reversedList:
+    print(str(num) + " ")
