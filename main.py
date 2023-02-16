@@ -1,5 +1,5 @@
 
-
+# finds and returns the sum of the array
 def summation(numList):
     total = 0
     for num in numList:
@@ -7,6 +7,7 @@ def summation(numList):
 
     return total
 
+# finds and returns product of array
 def product(numList):
     total = 1
     for num in numList:
@@ -14,9 +15,19 @@ def product(numList):
 
     return total
 
-numList = [1, 2, 3, 4, 5, 6, 7]
+# main
+numList = []
 
+sizeList = int(input("\nenter the size of the list: "))
+print("\ninput " + str(sizeList) + " numbers", )
+
+for i in range(sizeList):
+    numList.append(int(input()))
+
+# function calls
 finalSum = summation(numList)
 finalProduct = product(numList)
-print("the sum is " + str(finalSum))
-print("the product is " + str(finalProduct))
+
+# final output
+print("\nthe sum is " + str(finalSum))
+print("\nthe product is " + str(finalProduct))
