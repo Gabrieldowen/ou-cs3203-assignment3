@@ -7,7 +7,16 @@ def summation(numList):
 
     return total
 
+def product(numList):
+    total = 1
+    for num in numList:
+        total *= num
+
+    return total
+
 numList = [1, 2, 3, 4, 5, 6, 7]
 
-sum = summation(numList)
-print("the sum is " + str(sum))
+finalSum = summation(numList)
+finalProduct = product(numList)
+print("the sum is " + str(finalSum))
+print("the product is " + str(finalProduct))
