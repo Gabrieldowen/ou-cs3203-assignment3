@@ -1,16 +1,13 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+def summation(numList):
+    total = 0
+    for num in numList:
+        total += num
 
+    return total
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+numList = [1, 2, 3, 4, 5, 6, 7]
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+sum = summation(numList)
+print("the sum is " + str(sum))
