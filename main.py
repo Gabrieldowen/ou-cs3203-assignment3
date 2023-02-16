@@ -43,6 +43,7 @@ reversedList = reverse(numList)
 print("\nthe sum is " + str(finalSum))
 print("\nthe product is " + str(finalProduct))
 
+#prints reversed list
 print("here is the reversed list")
 for num in reversedList:
     print(str(num) + " ")
